@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune" Position="6"/>
+	<Series Name="Dune">
+		<Database Name="Hardcover" Item="dune" />
+	</Series>
+	<NumBooks>9</NumBooks>
+	<Books>
+		<Book Name="Dune" Year="1965" Position="1">
+			<Database Name="Hardcover" Item="dune" />
+		</Book>
+		<Book Name="Dune Messiah" Year="1965" Position="2">
+			<Database Name="Hardcover" Item="dune-messiah" />
+		</Book>
+		<Book Name="Children of Dune" Year="1975" Position="3">
+		    <Database Name="Hardcover" Item="children-of-dune" />
+		</Book>
+		<Book Name="God Emperor of Dune" Year="1981" Position="4">
+			<Database Name="Hardcover" Item="god-emperor-of-dune" />
+		</Book>
+		<Book Name="Heretics of Dune" Year="1984" Position="5">
+			<Database Name="Hardcover" Item="heretics-of-dune" />
+		</Book>
+		<Book Name="Chapterhouse: Dune" Year="1985" Position="6">
+		    <Database Name="Hardcover" Item="chapterhouse-dune" />
+		</Book>
+		<Book Name="Hunters of Dune" Year="2006" Position="7">
+			<Database Name="Hardcover" Item="hunters-of-dune" />
+		</Book>
+		<Book Name="Sandworms of Dune" Year="2007" Position="8">
+			<Database Name="Hardcover" Item="sandworms-of-dune" />
+		</Book>
+		<Book Name="The Truths of Dune: Fear is the Mind Killer" Year="1984" Position="8.5">
+			<Database Name="Hardcover" Item="the-truths-of-dune" />
+		</Book>
+	</Books>
+</ReadingList>

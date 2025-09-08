@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Warhammer 40k"/>
+	<Series Name="The Macharian Crusade" Subtype="main">
+		<Database Name="Hardcover" Item="the-macharian-crusade" />
+	</Series>
+	<NumBooks>3</NumBooks>
+	<Books>
+		<Book Name="Angel of Fire" Year="2012" Publisher="Black Library">
+			<Database Name="Hardcover" Item="angel-of-fire-2012" />
+		</Book>
+		<Book Name="Fist of Demetrius" Year="2013" Publisher="Black Library">
+			<Database Name="Hardcover" Item="fist-of-demetrius" />
+		</Book>
+		<Book Name="Fall of Macharius" Year="2014" Publisher="Black Library">
+			<Database Name="Hardcover" Item="fall-of-macharius" />
+			<Database Name="Goodreads" Item="20821607-fall-of-macharius" />
+		</Book>
+	</Books>
+</ReadingList>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune" Position="4"/>
+	<Series Name="Great Schools of Dune">
+		<Database Name="Hardcover" Item="the-great-schools-of-dune" />
+	</Series>
+	<NumBooks>4</NumBooks>
+	<Books>
+		<Book Name="Sisterhood of Dune" Year="2012" Position="1">
+			<Database Name="Hardcover" Item="sisterhood-of-dune-2012" />
+		</Book>
+		<Book Name="Mentats of Dune" Year="2014" Position="2">
+			<Database Name="Hardcover" Item="mentats-of-dune" />
+		</Book>
+		<Book Name="Dune: Red Plague" Year="2016" Position="2.5">
+		    <Database Name="Hardcover" Item="dune-red-plague" />
+		</Book>
+		<Book Name="Navigators of Dune" Year="2016" Position="3">
+			<Database Name="Hardcover" Item="navigators-of-dune" />
+		</Book>
+	</Books>
+</ReadingList>

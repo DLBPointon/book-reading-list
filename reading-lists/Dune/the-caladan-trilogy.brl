@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune" Position="5"/>
+	<Series Name="The Caladan Trilogy">
+		<Database Name="Hardcover" Item="the-caladan-trilogy" />
+	</Series>
+	<NumBooks>3</NumBooks>
+	<Books>
+		<Book Name="Dune: The Duke of Caladan" Year="1978">
+			<Database Name="Hardcover" Item="dune-the-duke-of-caladan" />
+		</Book>
+		<Book Name="Dune: The Lady of Caladan" Year="2021">
+			<Database Name="Hardcover" Item="dune-the-lady-of-caladan" />
+		</Book>
+		<Book Name="Dune: The Heir of Caladan" Year="2022">
+		    <Database Name="Hardcover" Item="dune-the-heir-of-caladan" />
+		</Book>
+	</Books>
+</ReadingList>

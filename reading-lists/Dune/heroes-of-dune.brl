@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune" Position="3"/>
+	<Series Name="Heroes of Dune">
+		<Database Name="Hardcover" Item="heroes-of-dune" />
+	</Series>
+	<NumBooks>3</NumBooks>
+	<Books>
+		<Book Name="Paul of Dune" Year="2008">
+			<Database Name="Hardcover" Item="paul-of-dune" />
+		</Book>
+		<Book Name="The Winds of Dune" Year="2009">
+			<Database Name="Hardcover" Item="the-winds-of-dune" />
+		</Book>
+		<Book Name="Princess of Dune" Year="2023">
+		    <Database Name="Hardcover" Item="princess-of-dune" />
+		</Book>
+	</Books>
+</ReadingList>
