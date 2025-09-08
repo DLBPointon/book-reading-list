@@ -1,0 +1,108 @@
+<xs:schema
+    attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="ReadingList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Universe" maxOccurs="1">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="Name" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Series">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Database" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                        <xs:attribute name="Name">
+                            <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="Hardcover" />
+                                <xs:enumeration value="Goodreads" />
+                                <xs:enumeration value="Amazon" />
+                                <xs:enumeration value="Google" />
+                            </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute type="xs:string" name="Item" />
+                        <xs:attribute
+                                                type="xs:short"
+                                                name="Position"
+                                                use="optional"
+                                            />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Name" />
+            <xs:attribute type="xs:string" name="Subtype" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:short" name="NumBooks" />
+        <xs:element name="Books">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Book" maxOccurs="unbounded" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element
+                                            name="Database"
+                                            maxOccurs="unbounded"
+                                            minOccurs="0"
+                                        >
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Name">
+                              <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Hardcover" />
+                                    <xs:enumeration value="Goodreads" />
+                                    <xs:enumeration value="Amazon" />
+                                    <xs:enumeration value="Google" />
+                                </xs:restriction>
+                              </xs:simpleType>
+                            </xs:attribute>
+                            <xs:attribute type="xs:string" name="Item" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="Name" />
+                  <xs:attribute name="Year">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:short">
+                            <xs:minInclusive value="1000" />
+                            <xs:maxInclusive value="9999" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                  <xs:attribute
+                                        type="xs:string"
+                                        name="Publisher"
+                                        use="optional"
+                                    />
+                  <xs:attribute
+                                        type="xs:short"
+                                        name="Position"
+                                        use="optional"
+                                    />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

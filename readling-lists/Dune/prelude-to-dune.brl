@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune"/>
+	<Series Name="Prelude to Dune">
+		<Database Name="Hardcover" Item="the-great-schools-of-dune" />
+	</Series>
+	<NumBooks>3</NumBooks>
+	<Books>
+		<Book Name="Dune: House Atreides" Year="1999">
+			<Database Name="Hardcover" Item="dune-house-atreides" />
+		</Book>
+		<Book Name="Dune: House Harkonnen" Year="2000">
+			<Database Name="Hardcover" Item="dune-house-harkonnen-2000" />
+		</Book>
+		<Book Name="House Corrino" Year="2001">
+		    <Database Name="Hardcover" Item="house-corrino-2001" />
+		</Book>
+	</Books>
+</ReadingList>

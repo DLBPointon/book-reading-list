@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune"/>
+	<Series Name="Legends of Dune">
+		<Database Name="Hardcover" Item="legends-of-dune" />
+	</Series>
+	<NumBooks>6</NumBooks>
+	<Books>
+		<Book Name="Hunting Harkonnens" Year="2002" Position="0.5">
+			<Database Name="Hardcover" Item="hunting-harkonnens" />
+			<Database Name="Goodreads" Item="719745.Hunting_Harkonnens" />
+		</Book>
+		<Book Name="Dune: The Butlerian Jihad" Year="2002" Position="1">
+			<Database Name="Hardcover" Item="dune-the-butlerian-jihad-the-butlerian-jihad-2002" />
+			<Database Name="Goodreads" Item="99219.The_Butlerian_Jihad" />
+		</Book>
+		<Book Name="Whipping Mek" Year="2003" Position="1.5">
+		    <Database Name="Hardcover" Item="whipping-mek" />
+			<Database Name="Goodreads" Item="7024219-whipping-mek" />
+		</Book>
+		<Book Name="Dune: The Machine Crusade" Year="2003" Position="2">
+			<Database Name="Hardcover" Item="dune-the-machine-crusade-the-machine-crusade-2003" />
+			<Database Name="Goodreads" Item="20821607-fall-of-macharius" />
+		</Book>
+		<Book Name="The Faces of a Martyr" Year="2004" Position="2.5">
+			<Database Name="Hardcover" Item="the-faces-of-a-martyr" />
+			<Database Name="Goodreads" Item="17304428-the-faces-of-a-martyr" />
+		</Book>
+		<Book Name="Dune: The Battle of Corrin" Year="2004" Position="3">
+			<Database Name="Hardcover" Item="dune-the-battle-of-corrin-2004" />
+			<Database Name="Goodreads" Item="99220.The_Battle_of_Corrin" />
+		</Book>
+	</Books>
+</ReadingList>
