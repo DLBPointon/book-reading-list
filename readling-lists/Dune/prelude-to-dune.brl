@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ReadingList>
-	<Universe Name="Dune"/>
+	<Universe Name="Dune" Position="1"/>
 	<Series Name="Prelude to Dune">
 		<Database Name="Hardcover" Item="the-great-schools-of-dune" />
 	</Series>

@@ -60,39 +60,39 @@ Now I tried to use this format for books for it falls short unless all books are
 My proposal is a format something more on the line of:
 
 ```
-<?xml version="1.0" encoding="utf-8"?>
-<ReadingList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<Universe name="Warhammer 40k" position=1</Universe> #Optional
-<Group name="The Horus Heresy" position=1 </Group> #Optional
-<Series name="The Horus Heresy"
-    <Database Name="Hardcover" Series="the-horus-heresy"> #Optional
-</Series>
-<NumIssues>54</NumIssues>
-<Books>
-    <Book Name="Horus Rising" Year="2006" Publisher="Black Library">
-        <Database Name="Hardcover" name="horus-rising" /> #Optional
-    </Book>
-    <Book Name="False Gods" Year="2006" Publisher="Black Library">
-        <Database Name="Hardcover" name="false-gods" /> #Optional
-    </Book>
-    <Book Name="Galaxy in Flames" Year="2006" Publisher="Black Library">
-        <Database Name="Hardcover" name="galaxy-in-flames" /> #Optional
-    </Book>
-...51 other Books
-</Books>
+<?xml version="1.0" encoding="UTF-8"?>
+<ReadingList>
+	<Universe Name="Dune"/>
+	<Series Name="The Caladan Trilogy" Position="5">
+		<Database Name="Hardcover" Item="the-caladan-trilogy" />
+	</Series>
+	<NumBooks>3</NumBooks>
+	<Books>
+		<Book Name="Dune: The Duke of Caladan" Year="1978">
+			<Database Name="Hardcover" Item="dune-the-duke-of-caladan" />
+		</Book>
+		<Book Name="Dune: The Lady of Caladan" Year="2021">
+			<Database Name="Hardcover" Item="dune-the-lady-of-caladan" />
+		</Book>
+		<Book Name="Dune: The Heir of Caladan" Year="2022">
+		    <Database Name="Hardcover" Item="dune-the-heir-of-caladan" />
+		</Book>
+	</Books>
 </ReadingList>
 ```
 
 ### Tags
+
+#### ReadingList
+Top level tag containing all other Tags.
 
 #### Universe
 The universe tag is intended to act as the parent tag word of multiple series.
 
 This could then be used to create pages to collect works in a `Universe` into some kind of order.
 
-NOTE: should this have `Position` too, to denote location of Series:Name in the Universe? That was an oversight...
-
-The power of this comes more into play with the `position` value of `Series`
+- `Name`: name of the Universe
+- `Position`: Position of series in the Universe
 
 #### Series
 This would be the essential naming of a collection of book.
@@ -100,7 +100,7 @@ This would be the essential naming of a collection of book.
 It can consist of:
 - `Name`: name of the series
 - `Subtype` (happy to change this to something more suiting): name of subseries
-- `Position`: position of series in Universe
+- `Position`: position of series in Universe, this is needed more when there is a `Subtype`
 - `Database`: Collection of information that could be used to confirm series positioning.
 
 This way we can have:
@@ -118,3 +118,14 @@ To place the series as the first series of the Horus Heresy in the Warhammer 40k
 As above, `Database` collects information used to confirm a book or series list.
 - `Name`: One of ["Hardcover", "Goodreads", "Google", "Amazon"]
 - `item`: Unique ID of that item on that site. For example, the book `False Gods` of the Horus heresy has the unique code of `false-gods`. It isn't always as simple as this however, `Goodreads` code for the same book is `381817.False_Gods`
+
+#### Books
+Collection of Book.
+
+#### Book
+Individual Book data consisting of:
+- `Name`: Name of the book.
+- `Year`: Year of publication to narrow down matches.
+- `Publisher`: Publisher of book - Optional
+
+Book can also encompass a `Database` in the same way as `Series`.
