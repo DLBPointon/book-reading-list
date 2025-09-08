@@ -44,7 +44,7 @@
               </xs:element>
             </xs:sequence>
             <xs:attribute type="xs:string" name="Name" />
-            <xs:attribute type="xs:string" name="Subtype" use="optional" />
+            <xs:attribute type="xs:string" name="Sub-series" use="optional" />
           </xs:complexType>
         </xs:element>
         <xs:element type="xs:short" name="NumBooks" />
