@@ -6,11 +6,11 @@ As far as i'm aware, nothing similar exists for books. For very large book serie
 
 The aim of brl is to create an open format for easily sharing book lists which can be adopted by popular book reading programs/tool/sites.
 
-- [Warhammer 40K](./Warhammer_40k/README.md)
+- [Warhammer 40K](./reading-lists/Warhammer_40k/README.md)
 
     - As a simple example contains The Inquisitor Series, which in turn contains the Eisenhorn Series, Ravenor Series and Bequin Series.
 
-- [Dune](./Dune/README.md)
+- [Dune](./reading-lists/Dune/README.md)
 
     - Containing 6 distinct series which I've written up in brl as an example case. This currently does not contain any nested series such as supplementary material.
 
@@ -100,7 +100,7 @@ This would be the essential naming of a collection of book.
 It can consist of:
 - `Name`: name of the series
 - `Subtype` (happy to change this to something more suiting): name of subseries
-- `Position`: position of series in Universe, this is needed more when there is a `Subtype`
+- `Position`: position of series in Universe, this is needed more when there is a `Subtype`.
 - `Database`: Collection of information that could be used to confirm series positioning.
 
 This way we can have:
