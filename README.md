@@ -20,7 +20,7 @@ The aim of brl is to create an open format for easily sharing book lists which c
 
 I'm sure there are many many more.
 
-This is all further complicated by `Supplementary books`, which have no place in the main series but offer further insight into the series or may simply explain the vehicles and lore of the universe (Codex's form Warhammer, Bestiaries from various universes and so on). In my opion Supplementary material should be a series nested inside it's parent series, for example `Series` would contain `Subtype` (the nested series) of `Supplementary`. In the case of `<Series Name="Dune" Subtype="Supplementary Works">` and be resolved as `Dune: Supplementary Works`. How this works will need further discussion with the community.
+This is all further complicated by `Supplementary books`, which have no place in the main series but offer further insight into the series or may simply explain the vehicles and lore of the universe (Codex's form Warhammer, Bestiaries from various universes and so on). In my opion Supplementary material should be a series nested inside it's parent series, for example `Series` would contain `Subseries` (the nested series) of `Supplementary`. In the case of `<Series Name="Dune" Subseries="Supplementary Works">` and be resolved as `Dune: Supplementary Works`. How this works will need further discussion with the community.
 
 ## Solution
 
@@ -99,7 +99,7 @@ This would be the essential naming of a collection of book.
 
 It can consist of:
 - `Name`: name of the series
-- `Subtype` (happy to change this to something more suiting): name of subseries
+- `Subseries`: name of subseries
 - `Position`: position of series in Universe, this is needed more when there is a `Subtype`.
 - `Database`: Collection of information that could be used to confirm series positioning.
 

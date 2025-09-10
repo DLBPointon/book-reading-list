@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ReadingList>
 	<Universe Name="Warhammer 40k"/>
-	<Series Name="The Macharian Crusade" Subtype="main">
+	<Series Name="The Macharian Crusade" Subseries="main">
 		<Database Name="Hardcover" Item="the-macharian-crusade" />
 	</Series>
 	<NumBooks>3</NumBooks>
